@@ -120,6 +120,8 @@ window.MARCA = {
 (function () {
   const m = window.MARCA, r = document.documentElement.style, c = m.colores;
   Object.entries(c).forEach(([k, v]) => r.setProperty("--" + k.replace(/[A-Z]/g, x => "-" + x.toLowerCase()), v));
+  /* colores escogidos en la propuesta (se guardan en este navegador) */
+  try { const t = JSON.parse(localStorage.getItem(m.clave + ".tema") || "null"); if (t) Object.entries(t).forEach(([k, v]) => r.setProperty("--" + k.replace(/[A-Z]/g, x => "-" + x.toLowerCase()), v)); } catch (e) {}
   r.setProperty("--f-titulo", `"${m.fuentes.titulo}", Georgia, serif`);
   r.setProperty("--f-texto", `"${m.fuentes.texto}", "Helvetica Neue", sans-serif`);
   const l = document.createElement("link"); l.rel = "stylesheet"; l.href = m.fuentes.url; document.head.appendChild(l);
