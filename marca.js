@@ -94,9 +94,9 @@ window.MARCA = {
     oscuro: "#1E1B14"
   },
   fuentes: {
-    titulo: "Bodoni Moda",
-    texto: "Jost",
-    url: "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300..800&display=swap"
+    titulo: "Playfair Display",
+    texto: "Nunito Sans",
+    url: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap"
   },
   logoImg: "",
   monograma: "SM",
@@ -109,10 +109,10 @@ window.MARCA = {
       <circle cx="200" cy="200" r="198" fill="#EEEEEC"/>
       <circle class="anillo a1" pathLength="100" cx="200" cy="200" r="186" fill="none" stroke="url(#${id})" stroke-width="${detalle ? 2.4 : 7}"/>
       ${detalle ? `<circle class="anillo a2" pathLength="100" cx="207" cy="194" r="176" fill="none" stroke="url(#${id})" stroke-width="1.6"/><circle class="anillo a2" pathLength="100" cx="194" cy="207" r="170" fill="none" stroke="url(#${id})" stroke-width="1.1"/>` : ""}
-      <text x="200" y="${detalle ? 266 : 278}" text-anchor="middle" font-family="'Bodoni Moda', Didot, 'Bodoni 72', Georgia, serif" font-weight="700" font-size="${detalle ? 196 : 230}" letter-spacing="-8" fill="#C2A71E">SM</text>
+      <text x="200" y="${detalle ? 266 : 278}" text-anchor="middle" font-family="'Playfair Display', Didot, Georgia, serif" font-weight="700" font-size="${detalle ? 196 : 230}" letter-spacing="-8" fill="#C2A71E">SM</text>
       ${detalle ? `<rect x="58" y="172" width="284" height="40" fill="#EEEEEC"/>
-      <text x="203" y="207" text-anchor="middle" font-family="'Bodoni Moda', Didot, 'Bodoni 72', Georgia, serif" font-weight="500" font-size="38" letter-spacing="15" fill="#C2A71E">MONIC'S</text>
-      <text x="200" y="326" text-anchor="middle" font-family="'Bodoni Moda', Didot, 'Bodoni 72', Georgia, serif" font-weight="700" font-size="44" fill="#C2A71E">BELLEZA</text>` : ""}
+      <text x="203" y="207" text-anchor="middle" font-family="'Playfair Display', Didot, Georgia, serif" font-weight="500" font-size="38" letter-spacing="15" fill="#C2A71E">MONIC'S</text>
+      <text x="200" y="326" text-anchor="middle" font-family="'Playfair Display', Didot, Georgia, serif" font-weight="700" font-size="44" fill="#C2A71E">BELLEZA</text>` : ""}
     </svg>`;
   }
 };
